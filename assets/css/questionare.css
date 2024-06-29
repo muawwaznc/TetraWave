@@ -551,3 +551,19 @@ footer .social-links-footer {
 .col-md-12{
     padding: 10px;
 }
+
+
+.form-check-input[type="radio"]:checked {
+    background-color: grey;
+    border-color: black; 
+}
+
+.form-check-input[type="radio"]{
+	border-color: black; 
+}
+
+.form-check-input[type="radio"]:checked + .form-check-label::before {
+    border-color: black; 
+    background-color: black;
+}
+
