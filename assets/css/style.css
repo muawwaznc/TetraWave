@@ -393,6 +393,10 @@ body.menu-expanded button path {
 
 /* ======== SECTION CONTACT ======== */
 
+#contact{
+	background-color: var(--brand-beige);
+}
+
 #contact h2 {
 	margin-bottom: 3.2rem;
 }

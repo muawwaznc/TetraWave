@@ -42,6 +42,12 @@ body {
 	height: 100%;
 }
 
+form{
+	padding: 20px;
+	border-radius: 40px;
+	border: 1px solid var(--brand-ligth);
+	background-color: var(--brand-beige);
+}
 
 ul {
 	list-style: none;
