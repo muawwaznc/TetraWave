@@ -48,7 +48,7 @@ function closeMenu() {
 }
 
 function toWhatsapp() {
-    window.open('https://wa.me/15622087216', '_blank');
+    window.open('https://wa.me/1234567890', '_blank');
 }
 
 function toQuestionare()
