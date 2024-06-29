@@ -88,7 +88,7 @@ section header h4 {
 
 /* CUSTOM COLORS  */
 
-#services .card circle {
+#whyChooseUs .card circle {
 	fill: var(--brand-ligth);
 }
 
@@ -97,7 +97,7 @@ section header h4 {
 	fill: var(--primary-color);
 }
 
-#services .card path,
+#whyChooseUs .card path,
 button.open-menu path[stroke*="#00856F"],
 #contact p path {
 	stroke: var(--primary-color);
@@ -147,7 +147,6 @@ nav button {
 
 button.whatsapp {
 	cursor: pointer;
-
 }
 
 /* ======== MENU EXPANDED ======== */
@@ -335,17 +334,17 @@ body.menu-expanded button path {
 
 /* ======== SECTION SERVICES ======== */
 
-#services h2 {
+#whyChooseUs h2 {
 	margin-bottom: 6rem;
 }
 
-#services .cards {
+#whyChooseUs .cards {
 	display: flex;
 	flex-flow: column;
 	gap: 3.2rem
 }
 
-#services .card {
+#whyChooseUs .card {
 	display: flex;
 	gap: 1.6rem;
 	flex-flow: column;
@@ -356,7 +355,7 @@ body.menu-expanded button path {
 	border-radius: 0.6rem;
 }
 
-#services .card p {
+#whyChooseUs .card p {
 	font-weight: 400;
 	font-size: 1.6rem;
 	line-height: 150%;
@@ -365,20 +364,20 @@ body.menu-expanded button path {
 
 /* ======== SECTION ABOUT ======== */
 
-#about {
+#vision {
 	background-color: var(--brand-beige);
 }
 
-#about h4 {
+#vision h4 {
 	text-align: left;
 }
 
-#about h2 {
+#vision h2 {
 	text-align: left;
 	margin-bottom: 2.4rem;
 }
 
-#about p {
+#vision p {
 	font-size: 1.6rem;
 	line-height: 150%;
 	font-weight: 400;
@@ -387,7 +386,7 @@ body.menu-expanded button path {
 	text-align: left;
 }
 
-#about img {
+#vision img {
 	display: block;
 	margin-inline: auto;
 }
@@ -714,35 +713,35 @@ footer .social-links-footer {
 
 	/* ============== SERVICES ================ */
 
-	#services h2 {
+	#whyChooseUs h2 {
 		width: 47rem;
 		margin-inline: auto;
 	}
 
-	#services .cards {
+	#whyChooseUs .cards {
 		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 4rem
 	}
 
-	#services .card {
+	#whyChooseUs .card {
 		width: 35%;
 		flex-grow: 1;
 	}
 
 	/* ============== ABOUT ================ */
 
-	#about .wrapper {
+	#vision .wrapper {
 		grid-template-columns: 48rem 1fr;
 		grid-template-areas: 'B A';
 		gap: 6.7rem;
 	}
 
-	#about .col-a {
+	#vision .col-a {
 		align-self: center;
 	}
 
-	#about .content p {
+	#vision .content p {
 		margin-bottom: 0;
 	}
 
