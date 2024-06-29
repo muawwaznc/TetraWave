@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="assets/img/favicon.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.jpg" rel="apple-touch-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link href="./assets/css/bootstrap-icons.css" rel="stylesheet">
+    <title>TetraWave</title>
+</head>
+
+<body>
+    <nav id="navigation">
+        <div class="wrapper">
+            <a id="nav-logo" href="#home" class="logo d-flex align-items-center me-auto me-lg-0">
+                <img height="40" src="assets/img/logo.png" alt="">
+                <h1 class="sitename">TetraWave</h1>
+                <span id="logo-dot" class="">.</span>
+            </a>
+
+            <div class="menu">
+                <ul class="menu-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">About</a></li>
+                    <li><a href="#about">Contact</a></li>
+                </ul>
+                <button class="whatsapp">Get Started</button>
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button aria-expanded="false" aria-label="Abrir menu" class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <button aria-expanded="true" aria-label="Fechar menu" class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+            </button>
+        </div>
+    </nav>
+
+    <section>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+
+                <form action="#" method="post" class="row g-3 php-email-form">
+                    <div class="col-md-12">
+                        <label for="inputCompanyName" class="form-label">Company Name</label>
+                        <input type="text" class="form-control" id="inputCompanyName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputContactPerson" class="form-label">Contact Person</label>
+                        <input type="text" class="form-control" id="inputContactPerson">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPosition" class="form-label">Position</label>
+                        <input type="text" class="form-control" id="inputPosition">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPhoneNumber" class="form-label">PhoneNumber</label>
+                        <input type="tel" class="form-control" id="inputPhoneNumber">
+                    </div>
+
+                    <hr>
+
+                    <!-- currentChallenges -->
+
+                    <!-- challengesRadioOptions -->
+                    <div class="col-md-6">
+                        <label class="form-label">
+                            What are the primary challenges your organization is currently facing in terms of
+                            operational efficiency?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="challengesRadio1">Manual workload</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="challengesRadio2">Inefficient processes</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="challengesRadio3">High operational costs</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="challengesRadio4">Manual workload</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="challengesRadio5">Oher</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherChallengesRadio">
+
+                    </div>
+                
+                    <!-- challengesImpactRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            How do these challenges impact your day-to-day operations and overall business performance?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="challengesImpactRadio1">Reduced productivity</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="challengesImpactRadio2">Increased costs</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="challengesImpactRadio3">Delays in service delivery</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="challengesImpactRadio4">Decreased customer satisfaction</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="challengesImpactRadio5">Oher</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherChallengesImpactRadio">
+
+                    </div>
+
+                    <hr>
+
+                    <!-- automationRequirements -->
+
+                    <!-- processRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            Which processes in your organization would benefit most from automation?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="processRadio1">Customer inquiries</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="processRadio2">Appointment bookings</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="processRadio3">Routine task management</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="processRadio4">Data entry</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="processRadio5">Report generation</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio6"
+                                value="option6">
+                            <label class="form-check-label" for="processRadio6">Oher</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherProcessRadio">
+                        
+                    </div>
+
+                    <!-- workflowsRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            Are there any specific tasks or workflows you would like to automate using AI-powered virtual assistants?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workflowsRadioOptions" id="workflowsRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="workflowsRadio1">Yes</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="workflowsRadioOptions" id="workflowsRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="workflowsRadio2">No</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherWorkflowsRadio" placeholder="If yes, please specify">
+                        
+                    </div>
+
+                    <hr>
+
+                    <!-- customerServiceEnhancement -->
+
+                    <!-- inquiriesRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            How do you currently handle customer inquiries and support?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inquiriesRadio1">Phone</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inquiriesRadio2">Email</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="inquiriesRadio3">Live Chat</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="inquiriesRadio4">Social Media</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="inquiriesRadio5">Oher</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherInquiriesRadio">
+
+                    </div>
+
+                    <!-- interactionRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            What channels do you use for customer interactions?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="interactionRadio1">Chat</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="interactionRadio2">Email</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="interactionRadio3">Voice</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="interactionRadio4">Social Media</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="interactionRadio5">Oher</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherInteractionRadio">
+
+                    </div>
+
+                    <!-- sentimentRadioOptions -->
+                    <div class="col-md-12">
+                        
+                        <label class="form-label">
+                            Would your organization benefit from AI systems capable of understanding and responding 
+                            to customer emotions through sentiment analysis?
+                        </label>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sentimentRadioOptions" id="sentimentRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="sentimentRadio1">Yes</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sentimentRadioOptions" id="sentimentRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="sentimentRadio2">No</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sentimentRadioOptions" id="sentimentRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="sentimentRadio3">Not Sure</label>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- customerServiceEnhancement -->
+
+                    <!-- manageEmailRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            How do you manage email communication within your organization?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="manageEmailRadioOptions" id="manageEmailRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="manageEmailRadio1">Manually</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="manageEmailRadioOptions" id="manageEmailRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="manageEmailRadio2">Automated tools</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="manageEmailRadioOptions" id="manageEmailRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="manageEmailRadio3">Mixed approach</label>
+                        </div>
+
+                    </div>
+
+                    <!-- automatedEmailRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            Would automated email handling tools that prioritize and respond to emails based on urgency be beneficial?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="automatedEmailRadioOptions" id="automatedEmailRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="automatedEmailRadio1">Yes</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="automatedEmailRadioOptions" id="automatedEmailRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="automatedEmailRadio2">No</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="automatedEmailRadioOptions" id="automatedEmailRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="automatedEmailRadio3">Not Sure</label>
+                        </div>
+
+                    </div>
+
+                    <!-- AIEmailRadioOptions -->
+                    <div class="col-md-12">
+                        
+                        <label class="form-label">
+                            Are you interested in AI systems that can efficiently route emails to the correct departments or individuals?
+                        </label>
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="AIEmailRadioOptions" id="AIEmailRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="AIEmailRadio1">Yes</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="AIEmailRadioOptions" id="AIEmailRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="AIEmailRadio2">No</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="AIEmailRadioOptions" id="AIEmailRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="AIEmailRadio3">Not Sure</label>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- IndustrySpecificSolutions -->
+
+                    <!-- industryRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            Which industry does your organization belong to?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="industryRadio1">Healthcare</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="industryRadio2">Finance</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="industryRadio3">Retail</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="industryRadio4">Manufacturing</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="industryRadio5">Logistics</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio6"
+                                value="option6">
+                            <label class="form-check-label" for="industryRadio6">Oher</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherIndustryRadio">
+                        
+                    </div>
+
+                    <!-- AiIndustryRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            Are there any specific AI applications you are interested in for your industry?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="AiIndustryRadio1">Patient scheduling</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="AiIndustryRadio2">Fraud detection</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="AiIndustryRadio3">Inventory management</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="AiIndustryRadio4">Predictive maintenance</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="AiIndustryRadio5">Route optimization</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio6"
+                                value="option6">
+                            <label class="form-check-label" for="AiIndustryRadio6">Oher</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherAiIndustryRadio">
+                        
+                    </div>
+
+                    <!-- industrySolutionsRadioOptions -->
+                    <div class="col-md-12">
+                        
+                        <label class="form-label">
+                            What specific outcomes are you looking to achieve with AI solutions in your industry?
+                        </label>
+
+                        <br>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="industrySolutionsRadio1">Increased efficiency</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="industrySolutionsRadio2">Cost reduction</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="industrySolutionsRadio3">Improved customer service</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="industrySolutionsRadio4">Enhanced decision-making</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="industrySolutionsRadio5">Other</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherindustrySolutionsRadio">
+                        
+                    </div>
+
+                    <hr>
+
+
+
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div>
+                <div class="logo d-flex align-items-center me-auto me-lg-0">
+                    <img height="40" src="assets/img/logo.png" alt="">
+                    <h1 class="sitename">TetraWave</h1>
+                    <span>.</span>
+                </div>
+                <ul>
+                    <li>© 2024 TetraWave.</li>
+                    <li>All rights reserved.</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="social-links-footer">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <a id="back-top-button" href="#home">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#00856F" />
+            <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </a>
+    <!-- scroll review lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
