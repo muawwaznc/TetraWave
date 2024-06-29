@@ -470,3 +470,36 @@ function SubmitForm() {
             }, false);
         });
 })();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to handle radio button change for each section
+    function handleRadioChange(radioName, otherInputId) {
+        var radios = document.querySelectorAll('.' + radioName);
+        var otherInput = document.getElementById(otherInputId);
+
+        // Initially hide the other input
+        otherInput.style.display = 'none';
+
+        // Add event listener to each radio button in the group
+        radios.forEach(function (radio) {
+            radio.addEventListener('change', function () {
+                if (radio.value === 'option5' && radio.checked) {
+                    otherInput.style.display = 'block';
+                    otherInput.setAttribute('required', 'required');
+                } else {
+                    otherInput.style.display = 'none';
+                    otherInput.removeAttribute('required');
+                }
+            });
+        });
+    }
+
+    // Call the function for each section
+    handleRadioChange('challengesRadioOptions', 'inputOtherChallengesRadio');
+    handleRadioChange('integrationRadioOptions', 'inputOtherIntegrationRadio');
+    handleRadioChange('salesStrategyRadioOptions', 'inputOtherSalesStrategyRadio');
+    handleRadioChange('longTermGoalsRadioOptions', 'inputOtherLongTermGoalsRadio');
+    handleRadioChange('preferencesRadioOptions', 'inputOtherPreferencesRadio');
+});
+
