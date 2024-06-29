@@ -112,30 +112,30 @@
                 </h1>
 
 
-                <form action="#" method="post" class="row g-3 php-email-form">
+                <form action="#" method="post" class="row g-3 needs-validation php-email-form" novalidate onsubmit="SubmitForm()">
 
                     <!-- 0- GeneralInformation -->
                     <h2 class="form-sub-heading">General Information:</h2>
 
                     <div class="col-md-12">
                         <label for="inputCompanyName" class="form-label">Company Name</label>
-                        <input type="text" class="form-control" id="inputCompanyName">
+                        <input required type="text" class="form-control" id="inputCompanyName">
                     </div>
                     <div class="col-md-6">
                         <label for="inputContactPerson" class="form-label">Contact Person</label>
-                        <input type="text" class="form-control" id="inputContactPerson">
+                        <input required type="text" class="form-control" id="inputContactPerson">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPosition" class="form-label">Position</label>
-                        <input type="text" class="form-control" id="inputPosition">
+                        <input required type="text" class="form-control" id="inputPosition">
                     </div>
                     <div class="col-md-6">
                         <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail">
+                        <input required type="email" class="form-control" id="inputEmail">
                     </div>
                     <div class="col-md-6">
                         <label for="inputPhoneNumber" class="form-label">PhoneNumber</label>
-                        <input type="tel" class="form-control" id="inputPhoneNumber">
+                        <input required type="tel" class="form-control" id="inputPhoneNumber">
                     </div>
 
                     <hr>
@@ -151,36 +151,36 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio1"
+                            <input required class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio1"
                                 value="option1">
                             <label class="form-check-label" for="challengesRadio1">Manual workload</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio2"
+                            <input required class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio2"
                                 value="option2">
                             <label class="form-check-label" for="challengesRadio2">Inefficient processes</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio3"
+                            <input required class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio3"
                                 value="option3">
                             <label class="form-check-label" for="challengesRadio3">High operational costs</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio4"
+                            <input required class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio4"
                                 value="option4">
                             <label class="form-check-label" for="challengesRadio4">Manual workload</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio5"
+                            <input required class="form-check-input" type="radio" name="challengesRadioOptions" id="challengesRadio5"
                                 value="option5">
                             <label class="form-check-label" for="challengesRadio5">Oher</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherChallengesRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherChallengesRadio">
 
                     </div>
                 
@@ -192,36 +192,36 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio1"
+                            <input required class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio1"
                                 value="option1">
                             <label class="form-check-label" for="challengesImpactRadio1">Reduced productivity</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio2"
+                            <input required class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio2"
                                 value="option2">
                             <label class="form-check-label" for="challengesImpactRadio2">Increased costs</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio3"
+                            <input required class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio3"
                                 value="option3">
                             <label class="form-check-label" for="challengesImpactRadio3">Delays in service delivery</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio4"
+                            <input required class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio4"
                                 value="option4">
                             <label class="form-check-label" for="challengesImpactRadio4">Decreased customer satisfaction</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio5"
+                            <input required class="form-check-input" type="radio" name="challengesImpactRadioOptions" id="challengesImpactRadio5"
                                 value="option5">
                             <label class="form-check-label" for="challengesImpactRadio5">Oher</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherChallengesImpactRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherChallengesImpactRadio">
 
                     </div>
 
@@ -238,42 +238,42 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio1"
+                            <input required class="form-check-input" type="radio" name="processRadioOptions" id="processRadio1"
                                 value="option1">
                             <label class="form-check-label" for="processRadio1">Customer inquiries</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio2"
+                            <input required class="form-check-input" type="radio" name="processRadioOptions" id="processRadio2"
                                 value="option2">
                             <label class="form-check-label" for="processRadio2">Appointment bookings</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio3"
+                            <input required class="form-check-input" type="radio" name="processRadioOptions" id="processRadio3"
                                 value="option3">
                             <label class="form-check-label" for="processRadio3">Routine task management</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio4"
+                            <input required class="form-check-input" type="radio" name="processRadioOptions" id="processRadio4"
                                 value="option4">
                             <label class="form-check-label" for="processRadio4">Data entry</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio5"
+                            <input required class="form-check-input" type="radio" name="processRadioOptions" id="processRadio5"
                                 value="option5">
                             <label class="form-check-label" for="processRadio5">Report generation</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="processRadioOptions" id="processRadio6"
+                            <input required class="form-check-input" type="radio" name="processRadioOptions" id="processRadio6"
                                 value="option6">
                             <label class="form-check-label" for="processRadio6">Oher</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherProcessRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherProcessRadio">
                         
                     </div>
 
@@ -285,18 +285,18 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="workflowsRadioOptions" id="workflowsRadio1"
+                            <input required class="form-check-input" type="radio" name="workflowsRadioOptions" id="workflowsRadio1"
                                 value="option1">
                             <label class="form-check-label" for="workflowsRadio1">Yes</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="workflowsRadioOptions" id="workflowsRadio2"
+                            <input required class="form-check-input" type="radio" name="workflowsRadioOptions" id="workflowsRadio2"
                                 value="option2">
                             <label class="form-check-label" for="workflowsRadio2">No</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherWorkflowsRadio" placeholder="If yes, please specify">
+                        <input required hidden type="text" class="form-control" id="inputOtherWorkflowsRadio" placeholder="If yes, please specify">
                         
                     </div>
 
@@ -313,36 +313,36 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio1"
+                            <input required class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio1"
                                 value="option1">
                             <label class="form-check-label" for="inquiriesRadio1">Phone</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio2"
+                            <input required class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio2"
                                 value="option2">
                             <label class="form-check-label" for="inquiriesRadio2">Email</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio3"
+                            <input required class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio3"
                                 value="option3">
                             <label class="form-check-label" for="inquiriesRadio3">Live Chat</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio4"
+                            <input required class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio4"
                                 value="option4">
                             <label class="form-check-label" for="inquiriesRadio4">Social Media</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio5"
+                            <input required class="form-check-input" type="radio" name="inquiriesRadioOptions" id="inquiriesRadio5"
                                 value="option5">
                             <label class="form-check-label" for="inquiriesRadio5">Oher</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherInquiriesRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherInquiriesRadio">
 
                     </div>
 
@@ -354,36 +354,36 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio1"
+                            <input required class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio1"
                                 value="option1">
                             <label class="form-check-label" for="interactionRadio1">Chat</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio2"
+                            <input required class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio2"
                                 value="option2">
                             <label class="form-check-label" for="interactionRadio2">Email</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio3"
+                            <input required class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio3"
                                 value="option3">
                             <label class="form-check-label" for="interactionRadio3">Voice</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio4"
+                            <input required class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio4"
                                 value="option4">
                             <label class="form-check-label" for="interactionRadio4">Social Media</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio5"
+                            <input required class="form-check-input" type="radio" name="interactionRadioOptions" id="interactionRadio5"
                                 value="option5">
                             <label class="form-check-label" for="interactionRadio5">Oher</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherInteractionRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherInteractionRadio">
 
                     </div>
 
@@ -396,19 +396,19 @@
                         </label>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="sentimentRadioOptions" id="sentimentRadio1"
+                            <input required class="form-check-input" type="radio" name="sentimentRadioOptions" id="sentimentRadio1"
                                 value="option1">
                             <label class="form-check-label" for="sentimentRadio1">Yes</label>
                         </div>
                         
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="sentimentRadioOptions" id="sentimentRadio2"
+                            <input required class="form-check-input" type="radio" name="sentimentRadioOptions" id="sentimentRadio2"
                                 value="option2">
                             <label class="form-check-label" for="sentimentRadio2">No</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="sentimentRadioOptions" id="sentimentRadio3"
+                            <input required class="form-check-input" type="radio" name="sentimentRadioOptions" id="sentimentRadio3"
                                 value="option3">
                             <label class="form-check-label" for="sentimentRadio3">Not Sure</label>
                         </div>
@@ -428,19 +428,19 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="manageEmailRadioOptions" id="manageEmailRadio1"
+                            <input required class="form-check-input" type="radio" name="manageEmailRadioOptions" id="manageEmailRadio1"
                                 value="option1">
                             <label class="form-check-label" for="manageEmailRadio1">Manually</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="manageEmailRadioOptions" id="manageEmailRadio2"
+                            <input required class="form-check-input" type="radio" name="manageEmailRadioOptions" id="manageEmailRadio2"
                                 value="option2">
                             <label class="form-check-label" for="manageEmailRadio2">Automated tools</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="manageEmailRadioOptions" id="manageEmailRadio3"
+                            <input required class="form-check-input" type="radio" name="manageEmailRadioOptions" id="manageEmailRadio3"
                                 value="option3">
                             <label class="form-check-label" for="manageEmailRadio3">Mixed approach</label>
                         </div>
@@ -455,19 +455,19 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="automatedEmailRadioOptions" id="automatedEmailRadio1"
+                            <input required class="form-check-input" type="radio" name="automatedEmailRadioOptions" id="automatedEmailRadio1"
                                 value="option1">
                             <label class="form-check-label" for="automatedEmailRadio1">Yes</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="automatedEmailRadioOptions" id="automatedEmailRadio2"
+                            <input required class="form-check-input" type="radio" name="automatedEmailRadioOptions" id="automatedEmailRadio2"
                                 value="option2">
                             <label class="form-check-label" for="automatedEmailRadio2">No</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="automatedEmailRadioOptions" id="automatedEmailRadio3"
+                            <input required class="form-check-input" type="radio" name="automatedEmailRadioOptions" id="automatedEmailRadio3"
                                 value="option3">
                             <label class="form-check-label" for="automatedEmailRadio3">Not Sure</label>
                         </div>
@@ -482,19 +482,19 @@
                         </label>
                         <br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="AIEmailRadioOptions" id="AIEmailRadio1"
+                            <input required class="form-check-input" type="radio" name="AIEmailRadioOptions" id="AIEmailRadio1"
                                 value="option1">
                             <label class="form-check-label" for="AIEmailRadio1">Yes</label>
                         </div>
                         
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="AIEmailRadioOptions" id="AIEmailRadio2"
+                            <input required class="form-check-input" type="radio" name="AIEmailRadioOptions" id="AIEmailRadio2"
                                 value="option2">
                             <label class="form-check-label" for="AIEmailRadio2">No</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="AIEmailRadioOptions" id="AIEmailRadio3"
+                            <input required class="form-check-input" type="radio" name="AIEmailRadioOptions" id="AIEmailRadio3"
                                 value="option3">
                             <label class="form-check-label" for="AIEmailRadio3">Not Sure</label>
                         </div>
@@ -514,42 +514,42 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio1"
+                            <input required class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio1"
                                 value="option1">
                             <label class="form-check-label" for="industryRadio1">Healthcare</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio2"
+                            <input required class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio2"
                                 value="option2">
                             <label class="form-check-label" for="industryRadio2">Finance</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio3"
+                            <input required class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio3"
                                 value="option3">
                             <label class="form-check-label" for="industryRadio3">Retail</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio4"
+                            <input required class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio4"
                                 value="option4">
                             <label class="form-check-label" for="industryRadio4">Manufacturing</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio5"
+                            <input required class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio5"
                                 value="option5">
                             <label class="form-check-label" for="industryRadio5">Logistics</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio6"
+                            <input required class="form-check-input" type="radio" name="industryRadioOptions" id="industryRadio6"
                                 value="option6">
                             <label class="form-check-label" for="industryRadio6">Oher</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherIndustryRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherIndustryRadio">
                         
                     </div>
 
@@ -561,42 +561,42 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio1"
+                            <input required class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio1"
                                 value="option1">
                             <label class="form-check-label" for="AiIndustryRadio1">Patient scheduling</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio2"
+                            <input required class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio2"
                                 value="option2">
                             <label class="form-check-label" for="AiIndustryRadio2">Fraud detection</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio3"
+                            <input required class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio3"
                                 value="option3">
                             <label class="form-check-label" for="AiIndustryRadio3">Inventory management</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio4"
+                            <input required class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio4"
                                 value="option4">
                             <label class="form-check-label" for="AiIndustryRadio4">Predictive maintenance</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio5"
+                            <input required class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio5"
                                 value="option5">
                             <label class="form-check-label" for="AiIndustryRadio5">Route optimization</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio6"
+                            <input required class="form-check-input" type="radio" name="AiIndustryRadioOptions" id="AiIndustryRadio6"
                                 value="option6">
                             <label class="form-check-label" for="AiIndustryRadio6">Oher</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherAiIndustryRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherAiIndustryRadio">
                         
                     </div>
 
@@ -610,36 +610,36 @@
                         <br>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio1"
+                            <input required class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio1"
                                 value="option1">
                             <label class="form-check-label" for="industrySolutionsRadio1">Increased efficiency</label>
                         </div>
                         
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio2"
+                            <input required class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio2"
                                 value="option2">
                             <label class="form-check-label" for="industrySolutionsRadio2">Cost reduction</label>
                         </div>
                         
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio3"
+                            <input required class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio3"
                                 value="option3">
                             <label class="form-check-label" for="industrySolutionsRadio3">Improved customer service</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio4"
+                            <input required class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio4"
                                 value="option4">
                             <label class="form-check-label" for="industrySolutionsRadio4">Enhanced decision-making</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio5"
+                            <input required class="form-check-input" type="radio" name="industrySolutionsRadioOptions" id="industrySolutionsRadio5"
                                 value="option5">
                             <label class="form-check-label" for="industrySolutionsRadio5">Other</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherindustrySolutionsRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherindustrySolutionsRadio">
                         
                     </div>
 
@@ -656,30 +656,30 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio1"
+                            <input required class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio1"
                                 value="option1">
                             <label class="form-check-label" for="adminRadio1">Data entry</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio2"
+                            <input required class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio2"
                                 value="option2">
                             <label class="form-check-label" for="adminRadio2">Report generation</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio3"
+                            <input required class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio3"
                                 value="option3">
                             <label class="form-check-label" for="adminRadio3">Meeting coordination</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio4"
+                            <input required class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio4"
                                 value="option4">
                             <label class="form-check-label" for="adminRadio4">Oher</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherAdminRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherAdminRadio">
                         
                     </div>
 
@@ -691,36 +691,36 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio1"
+                            <input required class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio1"
                                 value="option1">
                             <label class="form-check-label" for="monitorEmpRadio1">Regular surveys</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio2"
+                            <input required class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio2"
                                 value="option2">
                             <label class="form-check-label" for="monitorEmpRadio2">Performance reviews</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio3"
+                            <input required class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio3"
                                 value="option3">
                             <label class="form-check-label" for="monitorEmpRadio3">Feedback sessions</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio4"
+                            <input required class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio4"
                                 value="option4">
                             <label class="form-check-label" for="monitorEmpRadio4">Not actively monitored</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio5"
+                            <input required class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio5"
                                 value="option5">
                             <label class="form-check-label" for="monitorEmpRadio5">Other</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherMonitorEmpRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherMonitorEmpRadio">
                         
                     </div>
 
@@ -732,19 +732,19 @@
                         </label>
                         <br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="AIHelpRadioOptions" id="AIHelpRadio1"
+                            <input required class="form-check-input" type="radio" name="AIHelpRadioOptions" id="AIHelpRadio1"
                                 value="option1">
                             <label class="form-check-label" for="AIHelpRadio1">Yes</label>
                         </div>
                         
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="AIHelpRadioOptions" id="AIHelpRadio2"
+                            <input required class="form-check-input" type="radio" name="AIHelpRadioOptions" id="AIHelpRadio2"
                                 value="option2">
                             <label class="form-check-label" for="AIHelpRadio2">No</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="AIHelpRadioOptions" id="AIHelpRadio3"
+                            <input required class="form-check-input" type="radio" name="AIHelpRadioOptions" id="AIHelpRadio3"
                                 value="option3">
                             <label class="form-check-label" for="AIHelpRadio3">Not Sure</label>
                         </div>
@@ -764,25 +764,25 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio1"
+                            <input required class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio1"
                                 value="option1">
                             <label class="form-check-label" for="integrationRadio1">Very important</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio2"
+                            <input required class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio2"
                                 value="option2">
                             <label class="form-check-label" for="integrationRadio2">Important</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio3"
+                            <input required class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio3"
                                 value="option3">
                             <label class="form-check-label" for="integrationRadio3">Not very important</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio4"
+                            <input required class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio4"
                                 value="option4">
                             <label class="form-check-label" for="integrationRadio4">Not at all important</label>
                         </div>
@@ -797,36 +797,36 @@
                         </label>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio1"
+                            <input required class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio1"
                                 value="option1">
                             <label class="form-check-label" for="thirdPartyAppRadio1">CRM systems</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio2"
+                            <input required class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio2"
                                 value="option2">
                             <label class="form-check-label" for="thirdPartyAppRadio2">ERP systems</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio3"
+                            <input required class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio3"
                                 value="option3">
                             <label class="form-check-label" for="thirdPartyAppRadio3">Project management tools</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio4"
+                            <input required class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio4"
                                 value="option4">
                             <label class="form-check-label" for="thirdPartyAppRadio4">Communication tools</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio5"
+                            <input required class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio5"
                                 value="option5">
                             <label class="form-check-label" for="thirdPartyAppRadio5">Other</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherThirdPartyAppRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherThirdPartyAppRadio">
                         
                     </div>
 
@@ -838,19 +838,19 @@
                         </label>
                         <br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="industrySpecificRadioOptions" id="industrySpecificRadio1"
+                            <input required class="form-check-input" type="radio" name="industrySpecificRadioOptions" id="industrySpecificRadio1"
                                 value="option1">
                             <label class="form-check-label" for="industrySpecificRadio1">Yes</label>
                         </div>
                         
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="industrySpecificRadioOptions" id="industrySpecificRadio2"
+                            <input required class="form-check-input" type="radio" name="industrySpecificRadioOptions" id="industrySpecificRadio2"
                                 value="option2">
                             <label class="form-check-label" for="industrySpecificRadio2">No</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="industrySpecificRadioOptions" id="industrySpecificRadio3"
+                            <input required class="form-check-input" type="radio" name="industrySpecificRadioOptions" id="industrySpecificRadio3"
                                 value="option3">
                             <label class="form-check-label" for="industrySpecificRadio3">Not Sure</label>
                         </div>
@@ -870,19 +870,19 @@
                         </label>
                         <br>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="salesStrategyRadioOptions" id="salesStrategyRadio1"
+                            <input required class="form-check-input" type="radio" name="salesStrategyRadioOptions" id="salesStrategyRadio1"
                                 value="option1">
                             <label class="form-check-label" for="salesStrategyRadio1">Yes</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="salesStrategyRadioOptions" id="salesStrategyRadio2"
+                            <input required class="form-check-input" type="radio" name="salesStrategyRadioOptions" id="salesStrategyRadio2"
                                 value="option2">
                             <label class="form-check-label" for="salesStrategyRadio2">No</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="salesStrategyRadioOptions" id="salesStrategyRadio3"
+                            <input required class="form-check-input" type="radio" name="salesStrategyRadioOptions" id="salesStrategyRadio3"
                                 value="option3">
                             <label class="form-check-label" for="salesStrategyRadio3">Not Sure</label>
                         </div>
@@ -897,19 +897,19 @@
                         </label>
                         <br>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="automaticFollowUpsRadioOptions" id="automaticFollowUpsRadio1"
+                            <input required class="form-check-input" type="radio" name="automaticFollowUpsRadioOptions" id="automaticFollowUpsRadio1"
                                 value="option1">
                             <label class="form-check-label" for="automaticFollowUpsRadio1">Yes</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="automaticFollowUpsRadioOptions" id="automaticFollowUpsRadio2"
+                            <input required class="form-check-input" type="radio" name="automaticFollowUpsRadioOptions" id="automaticFollowUpsRadio2"
                                 value="option2">
                             <label class="form-check-label" for="automaticFollowUpsRadio2">No</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="automaticFollowUpsRadioOptions" id="automaticFollowUpsRadio3"
+                            <input required class="form-check-input" type="radio" name="automaticFollowUpsRadioOptions" id="automaticFollowUpsRadio3"
                                 value="option3">
                             <label class="form-check-label" for="automaticFollowUpsRadio3">Not Sure</label>
                         </div>
@@ -924,19 +924,19 @@
                         </label>
                         <br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="customerRelationshipsRadioOptions" id="customerRelationshipsRadio1"
+                            <input required class="form-check-input" type="radio" name="customerRelationshipsRadioOptions" id="customerRelationshipsRadio1"
                                 value="option1">
                             <label class="form-check-label" for="customerRelationshipsRadio1">CRM systems</label>
                         </div>
                         
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="customerRelationshipsRadioOptions" id="customerRelationshipsRadio2"
+                            <input required class="form-check-input" type="radio" name="customerRelationshipsRadioOptions" id="customerRelationshipsRadio2"
                                 value="option2">
                             <label class="form-check-label" for="customerRelationshipsRadio2">Manual processes</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="customerRelationshipsRadioOptions" id="customerRelationshipsRadio3"
+                            <input required class="form-check-input" type="radio" name="customerRelationshipsRadioOptions" id="customerRelationshipsRadio3"
                                 value="option3">
                             <label class="form-check-label" for="customerRelationshipsRadio3">Combination of both</label>
                         </div>
@@ -956,36 +956,36 @@
                         </label>
                         <br>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio1"
+                            <input required class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio1"
                                 value="option1">
                             <label class="form-check-label" for="longTermGoalsRadio1">Increase efficiency</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio2"
+                            <input required class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio2"
                                 value="option2">
                             <label class="form-check-label" for="longTermGoalsRadio2">Enhance customer service</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio3"
+                            <input required class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio3"
                                 value="option3">
                             <label class="form-check-label" for="longTermGoalsRadio3">Reduce costs</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio4"
+                            <input required class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio4"
                                 value="option4">
                             <label class="form-check-label" for="longTermGoalsRadio4">Gain competitive advantage</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio5"
+                            <input required class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio5"
                                 value="option5">
                             <label class="form-check-label" for="longTermGoalsRadio5">Other</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherLongTermGoalsRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherLongTermGoalsRadio">
 
                     </div>
 
@@ -997,36 +997,36 @@
                         </label>
                         <br>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio1"
+                            <input required class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio1"
                                 value="option1">
                             <label class="form-check-label" for="AIAdvantageRadio1">By automating complex tasks</label>
                         </div>
                         
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio2"
+                            <input required class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio2"
                                 value="option2">
                             <label class="form-check-label" for="AIAdvantageRadio2">Enhancing decision-making</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio3"
+                            <input required class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio3"
                                 value="option3">
                             <label class="form-check-label" for="AIAdvantageRadio3">Improving customer interactions</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio4"
+                            <input required class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio4"
                                 value="option4">
                             <label class="form-check-label" for="AIAdvantageRadio4">Increasing productivity</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio5"
+                            <input required class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio5"
                                 value="option5">
                             <label class="form-check-label" for="AIAdvantageRadio5">Other</label>
                         </div>
 
-                        <input hidden type="text" class="form-control" id="inputOtherAIAdvantageRadio">
+                        <input required hidden type="text" class="form-control" id="inputOtherAIAdvantageRadio">
 
                     </div>
 
@@ -1043,18 +1043,18 @@
                         </label>
                         <br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="preferencesRadioOptions" id="preferencesRadio1"
+                            <input required class="form-check-input" type="radio" name="preferencesRadioOptions" id="preferencesRadio1"
                                 value="option1">
                             <label class="form-check-label" for="preferencesRadio1">Yes</label>
                         </div>
                         
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="preferencesRadioOptions" id="preferencesRadio2"
+                            <input required class="form-check-input" type="radio" name="preferencesRadioOptions" id="preferencesRadio2"
                                 value="option2">
                             <label class="form-check-label" for="preferencesRadio2">No</label>
                         </div>
 
-                        <input hidden type="text" class="form-control form-check-inline" id="inputOtherPreferencesRadio" placeholder="If yes, please specify">
+                        <input required hidden type="text" class="form-control form-check-inline" id="inputOtherPreferencesRadio" placeholder="If yes, please specify">
                         
                     </div>
 
@@ -1062,7 +1062,7 @@
 
                     <div class="mb-3">
                         <label for="commentsTextarea" class="form-label">Any additional feedback or comments</label>
-                        <textarea class="form-control" id="commentsTextarea" rows="4"></textarea>
+                        <textarea required class="form-control" id="commentsTextarea" rows="4"></textarea>
                     </div>
 
 
