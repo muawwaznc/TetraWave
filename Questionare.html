@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
-
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link href="./assets/css/bootstrap-icons.css" rel="stylesheet">
     <title>TetraWave</title>
 </head>
@@ -629,11 +629,424 @@
 
                     <hr>
 
+                    <!-- EmployeeProductivity -->
 
+                    <!-- adminRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            Are there any administrative tasks within your organization that you would like to automate?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="adminRadio1">Data entry</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="adminRadio2">Report generation</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="adminRadio3">Meeting coordination</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="adminRadioOptions" id="adminRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="adminRadio4">Oher</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherAdminRadio">
+                        
+                    </div>
+
+                    <!-- monitorEmpRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            How do you currently monitor and enhance employee engagement and well-being?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="monitorEmpRadio1">Regular surveys</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="monitorEmpRadio2">Performance reviews</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="monitorEmpRadio3">Feedback sessions</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="monitorEmpRadio4">Not actively monitored</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="monitorEmpRadioOptions" id="monitorEmpRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="monitorEmpRadio5">Other</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherMonitorEmpRadio">
+                        
+                    </div>
+
+                    <!-- AIHelpRadioOptions -->
+                    <div class="col-md-12">
+                        
+                        <label class="form-label">
+                            Would AI tools that assist employees with drafting documents, creating presentations, and managing schedules be useful?
+                        </label>
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="AIHelpRadioOptions" id="AIHelpRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="AIHelpRadio1">Yes</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="AIHelpRadioOptions" id="AIHelpRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="AIHelpRadio2">No</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="AIHelpRadioOptions" id="AIHelpRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="AIHelpRadio3">Not Sure</label>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- CustomizationAndIntegration -->
+
+                    <!-- integrationRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            How important is seamless integration with your existing IT infrastructure and workflows?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="integrationRadio1">Very important</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="integrationRadio2">Important</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="integrationRadio3">Not very important</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="integrationRadioOptions" id="integrationRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="integrationRadio4">Not at all important</label>
+                        </div>
+                        
+                    </div>
+
+                    <!-- thirdPartyAppRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            What third-party applications do you currently use that would need to integrate with AI systems?
+                        </label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="thirdPartyAppRadio1">CRM systems</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="thirdPartyAppRadio2">ERP systems</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="thirdPartyAppRadio3">Project management tools</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="thirdPartyAppRadio4">Communication tools</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thirdPartyAppRadioOptions" id="thirdPartyAppRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="thirdPartyAppRadio5">Other</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherThirdPartyAppRadio">
+                        
+                    </div>
+
+                    <!-- industrySpecificRadioOptions -->
+                    <div class="col-md-12">
+                        
+                        <label class="form-label">
+                            Do you require industry-specific customization for AI solutions?
+                        </label>
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="industrySpecificRadioOptions" id="industrySpecificRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="industrySpecificRadio1">Yes</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="industrySpecificRadioOptions" id="industrySpecificRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="industrySpecificRadio2">No</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="industrySpecificRadioOptions" id="industrySpecificRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="industrySpecificRadio3">Not Sure</label>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- SalesAndCRMSystems -->
+
+                    <!-- salesStrategyRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            Would AI-enhanced CRM systems that offer real-time insights and lead scoring be beneficial to your sales strategy?
+                        </label>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salesStrategyRadioOptions" id="salesStrategyRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="salesStrategyRadio1">Yes</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salesStrategyRadioOptions" id="salesStrategyRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="salesStrategyRadio2">No</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="salesStrategyRadioOptions" id="salesStrategyRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="salesStrategyRadio3">Not Sure</label>
+                        </div>
+
+                    </div>
+
+                    <!-- automaticFollowUpsRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            Are you interested in automating customer follow-ups, reminders, and personalized marketing campaigns?
+                        </label>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="automaticFollowUpsRadioOptions" id="automaticFollowUpsRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="automaticFollowUpsRadio1">Yes</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="automaticFollowUpsRadioOptions" id="automaticFollowUpsRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="automaticFollowUpsRadio2">No</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="automaticFollowUpsRadioOptions" id="automaticFollowUpsRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="automaticFollowUpsRadio3">Not Sure</label>
+                        </div>
+
+                    </div>
+
+                    <!-- customerRelationshipsRadioOptions  -->
+                    <div class="col-md-12">
+                        
+                        <label class="form-label">
+                            How do you manage customer relationships and sales processes?
+                        </label>
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="customerRelationshipsRadioOptions" id="customerRelationshipsRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="customerRelationshipsRadio1">CRM systems</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="customerRelationshipsRadioOptions" id="customerRelationshipsRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="customerRelationshipsRadio2">Manual processes</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="customerRelationshipsRadioOptions" id="customerRelationshipsRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="customerRelationshipsRadio3">Combination of both</label>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- StrategicVision -->
+
+                    <!-- longTermGoalsRadioOptions  -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            What are your long-term goals for adopting AI technology in your organization?
+                        </label>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="longTermGoalsRadio1">Increase efficiency</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="longTermGoalsRadio2">Enhance customer service</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="longTermGoalsRadio3">Reduce costs</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="longTermGoalsRadio4">Gain competitive advantage</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="longTermGoalsRadioOptions" id="longTermGoalsRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="longTermGoalsRadio5">Other</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherLongTermGoalsRadio">
+
+                    </div>
+
+                    <!-- AIAdvantageRadioOptions -->
+                    <div class="col-md-6">
+                        
+                        <label class="form-label">
+                            How do you envision AI solutions transforming your business operations and providing a competitive advantage?
+                        </label>
+                        <br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="AIAdvantageRadio1">By automating complex tasks</label>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="AIAdvantageRadio2">Enhancing decision-making</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio3"
+                                value="option3">
+                            <label class="form-check-label" for="AIAdvantageRadio3">Improving customer interactions</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio4"
+                                value="option4">
+                            <label class="form-check-label" for="AIAdvantageRadio4">Increasing productivity</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="AIAdvantageRadioOptions" id="AIAdvantageRadio5"
+                                value="option5">
+                            <label class="form-check-label" for="AIAdvantageRadio5">Other</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control" id="inputOtherAIAdvantageRadio">
+
+                    </div>
+
+                    <hr>
+
+                    <!-- AdditionalComments -->
+
+                    <!-- preferencesRadioOptions -->
+                    <div class="col-md-12">
+                        
+                        <label class="form-label">
+                            Are there any other specific needs or preferences you have regarding AI solutions?
+                        </label>
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="preferencesRadioOptions" id="preferencesRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="preferencesRadio1">Yes</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="preferencesRadioOptions" id="preferencesRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="preferencesRadio2">No</label>
+                        </div>
+
+                        <input hidden type="text" class="form-control form-check-inline" id="inputOtherPreferencesRadio" placeholder="If yes, please specify">
+                        
+                    </div>
+
+                    <!-- comments -->
+
+                    <div class="mb-3">
+                        <label for="commentsTextarea" class="form-label">Any additional feedback or comments</label>
+                        <textarea class="form-control" id="commentsTextarea" rows="4"></textarea>
+                    </div>
 
 
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-outline-secondary">Send Response</button>
                     </div>
                 </form>
 
@@ -714,6 +1127,7 @@
     </a>
     <!-- scroll review lib -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
