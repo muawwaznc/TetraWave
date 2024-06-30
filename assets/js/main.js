@@ -66,7 +66,7 @@ function toWhatsapp() {
 
 function toQuestionare()
 {
-    window.location.href='./Questionare.html'
+    window.location.href='Questionare.html'
 }
 
 document.addEventListener('scroll', onScroll)
