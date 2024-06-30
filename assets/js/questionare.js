@@ -474,8 +474,8 @@ function SubmitForm() {
 
 document.addEventListener('DOMContentLoaded', function () {
     // Function to handle radio button change for each section
-    function handleRadioChange(radioName, otherInputId) {
-        var radios = document.querySelectorAll('.' + radioName);
+    function handleRadioChange(radioName, otherInputId, optionNumber) {
+        var radios = document.getElementsByName(radioName);
         var otherInput = document.getElementById(otherInputId);
 
         // Initially hide the other input
@@ -484,10 +484,13 @@ document.addEventListener('DOMContentLoaded', function () {
         // Add event listener to each radio button in the group
         radios.forEach(function (radio) {
             radio.addEventListener('change', function () {
-                if (radio.value === 'option5' && radio.checked) {
+                if (radio.value === optionNumber && radio.checked) 
+                {
                     otherInput.style.display = 'block';
                     otherInput.setAttribute('required', 'required');
-                } else {
+                } 
+                else 
+                {
                     otherInput.style.display = 'none';
                     otherInput.removeAttribute('required');
                 }
@@ -496,10 +499,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Call the function for each section
-    handleRadioChange('challengesRadioOptions', 'inputOtherChallengesRadio');
-    handleRadioChange('integrationRadioOptions', 'inputOtherIntegrationRadio');
-    handleRadioChange('salesStrategyRadioOptions', 'inputOtherSalesStrategyRadio');
-    handleRadioChange('longTermGoalsRadioOptions', 'inputOtherLongTermGoalsRadio');
-    handleRadioChange('preferencesRadioOptions', 'inputOtherPreferencesRadio');
+    handleRadioChange('challengesRadioOptions', 'inputOtherChallengesRadio', 'option5');
+    handleRadioChange('challengesImpactRadioOptions', 'inputOtherChallengesImpactRadio', 'option5');
+    handleRadioChange('processRadioOptions', 'inputOtherProcessRadio', 'option6');
+    handleRadioChange('inquiriesRadioOptions', 'inputOtherInquiriesRadio', 'option5');
+    handleRadioChange('interactionRadioOptions', 'inputOtherInteractionRadio', 'option5');
+
+    handleRadioChange('industryRadioOptions', 'inputOtherIndustryRadio', 'option6');
+    handleRadioChange('AiIndustryRadioOptions', 'inputOtherAiIndustryRadio', 'option6');
+    handleRadioChange('industrySolutionsRadioOptions', 'inputOtherindustrySolutionsRadio', 'option5');
+    handleRadioChange('adminRadioOptions', 'inputOtherAdminRadio', 'option4');
+    handleRadioChange('monitorEmpRadioOptions', 'inputOtherMonitorEmpRadio', 'option5');
+
+    handleRadioChange('thirdPartyAppRadioOptions', 'inputOtherThirdPartyAppRadio', 'option5');
+    handleRadioChange('longTermGoalsRadioOptions', 'inputOtherLongTermGoalsRadio', 'option5');
+    handleRadioChange('AIAdvantageRadioOptions', 'inputOtherAIAdvantageRadio', 'option5');
+    handleRadioChange('workflowsRadioOptions', 'inputOtherWorkflowsRadio', 'option1');
+    handleRadioChange('preferencesRadioOptions', 'inputOtherPreferencesRadio', 'option1');
 });
 
