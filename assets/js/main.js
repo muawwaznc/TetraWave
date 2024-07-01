@@ -91,3 +91,22 @@ ScrollReveal({
   #about header,
   #about .content,
   #about img`)
+
+function submitContactUsForm(event) 
+{
+    event.preventDefault(); 
+    
+    const name = document.getElementById('nameInput').value;
+    const email = document.getElementById('emailInput').value;
+    const subject = document.getElementById('subjectInput').value;
+    const message = document.getElementById('messageInput').value;
+    
+    const emailHTML = `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <br><hr>
+        <p><strong>Message:</strong> ${message}</p>
+    `;
+
+    sendEmailOfContactUs(email, subject, emailHTML);
+}

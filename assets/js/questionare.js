@@ -82,7 +82,10 @@ ScrollReveal({
 
 
 
-function SubmitForm() {
+function SubmitQuestionareForm(event) {
+
+    event.preventDefault(); 
+
     // General Information
     var companyName = document.getElementById('inputCompanyName').value;
     var contactPerson = document.getElementById('inputContactPerson').value;
@@ -380,74 +383,66 @@ function SubmitForm() {
         <p><strong>Position:</strong> ${position}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone Number:</strong> ${phoneNumber}</p>
+        <hr>
 
         <h2>Current Challenges:</h2>
         <p><strong>Primary Challenge:</strong> ${challenges}</p>
         <p><strong>Impact on Operations:</strong> ${challengesImpact}</p>
+        <hr>
 
         <h2>Automation Requirements:</h2>
         <p><strong>Processes Benefitting from Automation:</strong> ${processes}</p>
         <p><strong>Tasks/Workflows for AI-powered Automation:</strong> ${workflows}</p>
+        <hr>
 
         <h2>Customer Service Enhancement:</h2>
         <p><strong>How Customer Inquiries are Handled:</strong> ${customerInquiries}</p>
         <p><strong>Channels for Customer Interactions:</strong> ${customerInteractions}</p>
         <p><strong>Sentiment Analysis Interest:</strong> ${sentimentAnalysis}</p>
+        <hr>
 
         <h2>Email Management:</h2>
         <p><strong>Email Communication Management:</strong> ${emailManagement}</p>
         <p><strong>Interest in Automated Email Handling:</strong> ${automatedEmailHandling}</p>
         <p><strong>Interest in AI Email Routing:</strong> ${AIEmailRouting}</p>
-    `
+        <hr>
 
-    // Industry Specific Solutions
-    emailHTML += `
         <h2>Industry Specific Solutions:</h2>
         <p><strong>Industry:</strong> ${industry}</p>
-        <p><strong>Specific AI Applications:</strong> ${aiApplications}</p>
+        <p><strong>Specific AI Applications:</strong> ${industryApplications}</p>
         <p><strong>Outcomes Desired:</strong> ${industryOutcomes}</p>
-    `;
+        <hr>
 
-    // Append employee productivity
-    emailHTML += `
         <h2>Employee Productivity:</h2>
-        <p><strong>Administrative Tasks for Automation:</strong> ${adminTasks}</p>
-        <p><strong>Employee Engagement Monitoring:</strong> ${employeeMonitoring}</p>
-        <p><strong>Interest in AI Employee Tools:</strong> ${aiEmployeeTools}</p>
-    `;
+        <p><strong>Administrative Tasks for Automation:</strong> ${administrativeTasks}</p>
+        <p><strong>Employee Engagement Monitoring:</strong> ${employeeEngagement}</p>
+        <p><strong>Interest in AI Employee Tools:</strong> ${AIAssistance}</p>
+        <hr>
 
-    // Append customization and integration
-    emailHTML += `
         <h2>Customization And Integration:</h2>
         <p><strong>Integration Importance:</strong> ${integrationImportance}</p>
         <p><strong>Third-Party Applications for Integration:</strong> ${thirdPartyApps}</p>
         <p><strong>Industry-Specific Customization Required:</strong> ${industryCustomization}</p>
-    `;
+        <hr>
 
-    // Append sales and CRM systems
-    emailHTML += `
         <h2>Sales And CRM Systems:</h2>
         <p><strong>AI-enhanced CRM Systems Benefit:</strong> ${aiCRMSystemsBenefit}</p>
         <p><strong>Interest in Automating Follow-Ups:</strong> ${automateFollowUps}</p>
         <p><strong>Current Customer Relationship Management:</strong> ${manageCustomerRelationships}</p>
-    `;
+        <hr>
 
-    // Append strategic vision
-    emailHTML += `
         <h2>Strategic Vision:</h2>
         <p><strong>Long-term Goals for AI Adoption:</strong> ${longTermGoals}</p>
         <p><strong>Envisioned AI Advantages:</strong> ${aiAdvantages}</p>
-    `;
+        <hr>
 
-    // Append additional comments
-    emailHTML += `
         <h2>Additional Comments:</h2>
         <p><strong>Specific Needs or Preferences:</strong> ${preferencesSpecified === 'Yes' ? otherPreferences : 'None specified'}</p>
         <p><strong>Additional Feedback or Comments:</strong></p>
         <p>${additionalComments}</p>
-    `;
-
-    console.log(emailHTML);
+        <hr>
+    `
+    sendEmailOfQuestionare(email, contactPerson, emailHTML);
 }
 
 

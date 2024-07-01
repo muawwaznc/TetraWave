@@ -112,7 +112,7 @@
                 </h1>
 
 
-                <form action="#" method="post" class="row g-3 needs-validation php-email-form" novalidate onsubmit="SubmitForm()">
+                <form onsubmit="SubmitQuestionareForm(event)" class="row g-3 needs-validation php-email-form" novalidate>
 
                     <!-- 0- GeneralInformation -->
                     <h2 class="form-sub-heading">General Information:</h2>
@@ -1105,7 +1105,9 @@
     </a>
     <!-- scroll review lib -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./assets/js/questionare.js"></script>
+    <script src="./assets/js/sendEmail.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

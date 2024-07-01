@@ -388,46 +388,26 @@
                 <header>
                     <h2>Get in touch with us!</h2>
                 </header>
-                <div class="content">
-                    <p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M22 16.92V20C22 20.55 21.55 21 21 21C16.02 21 11.24 18.93 7.76 15.45C4.28 11.97 2.21 7.19 2 2.2C1.99 1.65 2.44 1.2 2.99 1.2H6.08C6.58 1.2 6.99 1.6 7.05 2.1C7.29 4.07 7.88 5.97 8.79 7.68C8.95 7.98 8.91 8.37 8.68 8.61L6.53 10.76C7.95 13.39 10.61 16.05 13.24 17.47L15.39 15.32C15.63 15.09 16.02 15.05 16.32 15.21C18.03 16.12 19.93 16.71 21.9 16.95C22.4 17.01 22.8 17.42 22.8 17.92V16.92Z"
-                                stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        +1 (123) 456-7890
-                    </p>
-                    <p>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
-                                stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M22 6L12 13L2 6" stroke="#00856F" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        info@tetrawave.com
-                    </p>
-                </div>
             </div>
             <div class="col-b">
-                <form action="#" method="post" class="php-email-form">
+                <!-- action="#" method="post" -->
+                <form onsubmit="submitContactUsForm(event)" class="php-email-form">
                     <div class="row gy-4">
 
                         <div class="col-md-6">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                            <input type="text" class="form-control" id="nameInput" placeholder="Your Name" required="">
                         </div>
 
                         <div class="col-md-6 ">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                            <input type="email" class="form-control" id="emailInput" placeholder="Your Email" required="">
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                            <input type="text" class="form-control" id="subjectInput" placeholder="Subject" required="">
                         </div>
 
                         <div class="col-md-12">
-                            <textarea class="form-control" name="message" rows="6" placeholder="Message"
-                                required=""></textarea>
+                            <textarea class="form-control" id="messageInput" rows="6" placeholder="Message" required=""></textarea>                            
                         </div>
 
                         <div class="col-md-12 text-center">
@@ -472,8 +452,9 @@
     </a>
     <!-- scroll review lib -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/sendEmail.js"></script>
 </body>
 
 </html>
