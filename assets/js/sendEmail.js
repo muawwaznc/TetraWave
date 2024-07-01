@@ -1,7 +1,6 @@
 const myEmail = `beyondgood9@gmail.com`;
 const myPassword = `rpibgcghdbuhfjio`;
-// const serverUrl = 'https://coral-app-nflgp.ondigitalocean.app/api/email';
-const serverUrl = 'http://localhost:3000/api/email';
+const serverUrl = 'https://coral-app-nflgp.ondigitalocean.app/api/email';
 const SendEmailOfServiceQuestionnaireUrl = `${serverUrl}/SendEmailOfServiceQuestionnaire`
 const SendEmailOfContactUs = `${serverUrl}/SendEmailOfContactUs`
 
@@ -33,7 +32,7 @@ async function sendEmailOfQuestionare(fromEmail, fromName, emailBodyHtml)
         console.log('Error:', error);
         alert('Error:', error);
     }
-    // location.reload();
+    location.reload();
 }
 
 async function sendEmailOfContactUs(fromEmail, emailSubject, emailBodyHtml) 
